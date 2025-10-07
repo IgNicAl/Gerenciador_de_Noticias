@@ -94,3 +94,4 @@ java -cp "lib/swt.jar:." GerenciadorDeNoticiasSWT
   - Maria Vitória Lopes Sá de Oliveira
   - Maximus Luiz Lacerda Bragança
   - Saulo Rodrigues Gomes de Lima
+  - Yuri Galindo França de Oliveira
