@@ -1,25 +1,48 @@
-# Projeto: Gerenciador de Notícias - POO 2025.2
+# Projeto: Gerenciador de Notícias com SWT
 
-## 1\. Introdução
+Este é um projeto acadêmico que implementa um gerenciador de notícias com interface gráfica, desenvolvido com a biblioteca **SWT (Standard Widget Toolkit)** em Java.
 
-Este é um projeto acadêmico desenvolvido para a disciplina de **Orientação a Objetos (2° Período - 2025.2)**. O objetivo foi criar uma aplicação de desktop para o gerenciamento de notícias, utilizando a biblioteca **SWT (Standard Widget Toolkit)** para a construção da interface gráfica.
+![Demonstração do Gerenciador de Notícias](https://i.imgur.com/PIQ5hAs.png)
 
-A aplicação aplica conceitos fundamentais de Programação Orientada a Objetos (POO), como classes, encapsulamento e métodos, para permitir ao usuário visualizar, adicionar, editar, excluir e filtrar notícias de forma eficiente.
+## 1\. Sobre o Desafio
 
-## 2\. Funcionalidades Principais
+Este projeto foi desenvolvido como solução para a atividade prática ("Desafio de Código") da disciplina de **Orientação a Objetos (2° Período - 2025.2)**.
 
-  - **Visualização em Tabela:** Exibe as notícias de forma organizada.
-  - **Operações CRUD:** Permite Adicionar, Editar e Excluir notícias.
-  - **Busca e Filtragem:** Funcionalidade para buscar notícias por título e filtrar por categoria.
+O objetivo principal era criar uma tela simples para visualização e gerenciamento de notícias, aplicando na prática os seguintes conceitos:
+
+  - **Criação de interface gráfica com SWT.**
+  - **Utilização de componentes visuais básicos** (tabelas, botões, campos de texto).
+  - **Aplicação dos pilares de Programação Orientada a Objetos:** classes, atributos, métodos, encapsulamento e abstração.
+  - **Implementação de funcionalidades essenciais**, como busca por texto e limpeza de filtros.
+
+## 2\. Funcionalidades Implementadas
+
+  - **Visualização em Tabela:** Exibe as notícias de forma organizada, com colunas para ID, Título, Autor, Categoria e Data.
+  - **Operações CRUD:**
+      - **[Adicionar]:** Abre uma nova janela para cadastrar uma notícia.
+      - **[Editar]:** Permite modificar as informações de uma notícia selecionada.
+      - **[Excluir]:** Remove uma notícia selecionada após confirmação.
+  - **Busca e Filtragem:**
+      - Campo para buscar notícias por **título**.
+      - Seletor para filtrar notícias por **categoria**.
+      - Botão **[Limpar Filtros]** para resetar a busca e a filtragem.
   - **Interface Nativa:** Utiliza componentes nativos do sistema operacional para uma melhor performance e aparência.
-  - **Status Dinâmico:** Exibe o total de notícias e mensagens de status temporárias após cada ação.
+  - **Status Dinâmico:** Exibe o total de notícias cadastradas e mostra mensagens de status temporárias após cada ação do usuário (ex: "Notícia adicionada com sucesso\!").
 
-## 3\. Tecnologias Utilizadas
+## 3\. Conceitos de POO Aplicados
 
-  - **Linguagem:** Java
+  - **Classes e Objetos:** O projeto é estruturado em duas classes principais:
+      - `Noticia.java`: Modela o objeto "Notícia", contendo seus atributos e métodos (POJO).
+      - `GerenciadorDeNoticiasSWT.java`: Orquestra a interface gráfica e a lógica de negócio.
+  - **Abstração:** A classe `Noticia` abstrai a entidade do mundo real, representando suas características (título, autor, etc.) e comportamentos essenciais.
+  - **Encapsulamento:** Os atributos da classe `Noticia` são privados e acessados por meio de métodos públicos (getters e setters), garantindo a integridade dos dados.
+
+## 4\. Tecnologias Utilizadas
+
+  - **Linguagem:** Java (versão 8 ou superior)
   - **Interface Gráfica:** SWT (Standard Widget Toolkit) - v4.29
 
-## 4\. Estrutura do Projeto
+## 5\. Estrutura do Projeto
 
 ```
 /Gerenciador_de_Noticias
@@ -32,7 +55,7 @@ A aplicação aplica conceitos fundamentais de Programação Orientada a Objetos
 └── README.md                    # Este arquivo de documentação
 ```
 
-## 5\. Como Executar o Projeto
+## 6\. Como Executar o Projeto
 
 ### Pré-requisitos
 
@@ -62,9 +85,7 @@ javac -cp "lib/swt.jar:." *.java
 java -cp "lib/swt.jar:." GerenciadorDeNoticiasSWT
 ```
 
-Após a execução dos comandos, a janela do "Gerenciador de Notícias" deverá aparecer na tela.
-
-## 6\. Integrantes do Grupo
+## 7\. Integrantes do Grupo
 
   - Daniela Regina Sales de Santana
   - Eduardo Mamedes Martiniano Monteiro

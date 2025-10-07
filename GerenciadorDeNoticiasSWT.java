@@ -4,10 +4,12 @@ import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.*;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
+
 
 public class GerenciadorDeNoticiasSWT {
 
@@ -156,11 +158,13 @@ public class GerenciadorDeNoticiasSWT {
     }
 
     private static void carregarNoticiasIniciais() {
+        todasAsNoticias.add(new Noticia(5, "‘Supernatural’ pode voltar em 2025?", "Igor Alencar", "A palavra-chave para um possível retorno de Supernatural é propósito...", "Economia", LocalDate.of(2025, 10, 5)));
         todasAsNoticias.add(new Noticia(1, "IA avança na criação de código", "Maximus Bragança", "Nova IA consegue gerar aplicações complexas...", "Tecnologia", LocalDate.of(2025, 10, 1)));
         todasAsNoticias.add(new Noticia(2, "Brasil vence Copa do Mundo", "Erivan Junior", "Seleção brasileira conquista o título...", "Esportes", LocalDate.of(2025, 9, 28)));
         todasAsNoticias.add(new Noticia(3, "Nova lei ambiental é aprovada", "Maria Vitória", "Congresso aprova nova legislação...", "Política", LocalDate.of(2025, 9, 25)));
-        todasAsNoticias.add(new Noticia(4, "Descoberta cura para doença rara", "Igor Alencar", "Cientistas anunciam avanço significativo...", "Saúde", LocalDate.of(2025, 9, 22)));
+        todasAsNoticias.add(new Noticia(4, "Descoberta cura para doença rara", "Eduardo Martiniano", "Cientistas anunciam avanço significativo...", "Saúde", LocalDate.of(2025, 9, 22)));
         todasAsNoticias.add(new Noticia(5, "Economia cresce 5% no trimestre", "Daniela Sales", "PIB surpreende e mostra forte recuperação...", "Economia", LocalDate.of(2025, 9, 20)));
+        todasAsNoticias.add(new Noticia(5, "Recife ganha novo espaço cultural com propósito social", "Saulo Rodrigues", "O Centro Cultural Instituto Marcos Hacker de Melo...", "Economia", LocalDate.of(2025, 9, 18)));
     }
 
     private static void atualizarTabela(String filtroTitulo) {
