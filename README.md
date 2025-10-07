@@ -163,7 +163,7 @@ Após a execução, a janela do "Gerenciador de Notícias" deverá aparecer na t
 
 ## Integrantes do Grupo
 
-O trabalho foi realizado em equipe pelos seguintes integrantes, listados em ordem alfabética:
+O trabalho foi realizado em equipe pelos seguintes integrantes:
 
   * Daniela Regina Sales de Santana
   * Eduardo Mamedes Martiniano Monteiro
