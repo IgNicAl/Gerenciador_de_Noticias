@@ -152,11 +152,11 @@ Assumindo que os arquivos `Noticia.java` e `GerenciadorDeNoticias.java` estão d
 2.  **Navegue até o diretório pai** que contém a pasta `Gerenciador_de_Noticias`.
 3.  **Compile os arquivos `.java`** com o seguinte comando:
     ```bash
-    javac Gerenciador_de_Noticias/Noticia.java Gerenciador_de_Noticias/GerenciadorDeNoticias.java
+    javac Noticia.java && javac GerenciadorDeNoticias.java
     ```
 4.  **Execute o programa** com o comando abaixo, que especifica o nome completo da classe principal:
     ```bash
-    java Gerenciador_de_Noticias.GerenciadorDeNoticias
+    java GerenciadorDeNoticias
     ```
 
 Após a execução, a janela do "Gerenciador de Notícias" deverá aparecer na tela. O programa é compatível com qualquer sistema operacional que possua uma JVM (Java Virtual Machine) instalada.
