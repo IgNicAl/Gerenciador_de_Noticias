@@ -3,6 +3,7 @@
 Este é um projeto acadêmico que implementa um gerenciador de notícias com interface gráfica, desenvolvido com a biblioteca **SWT (Standard Widget Toolkit)** em Java.
 
 ![Demonstração do Gerenciador de Notícias](https://i.imgur.com/PIQ5hAs.png)
+[![Gerenciador de Noticias](https://img.youtube.com/vi/zcFo7r-HZ7Q/0.jpg)](https://www.youtube.com/watch?v=zcFo7r-HZ7Q)
 
 ## 1\. Sobre o Desafio
 
